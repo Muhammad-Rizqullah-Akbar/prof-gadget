@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2016",
+    "lib": ["es6"],
+    
+    /* Modules */
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    
+    /* Type Checking */
+    "strict": true,
+    "skipLibCheck": true,
+    
+    /* Projects */
+    "outDir": "./dist",
+    "rootDir": "./src",     /* <--- INI WAJIB DITAMBAHKAN */
+    
+    /* MATIKAN FITUR YANG BIKIN ERROR */
+    "verbatimModuleSyntax": false
+  },
+  "include": ["src/**/*"],  /* <--- HAPUS prisma DARI SINI */
+  "exclude": ["node_modules"]
+}
