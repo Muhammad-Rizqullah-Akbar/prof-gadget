@@ -23,7 +23,7 @@ app.use(helmet());
 // --- B. KEAMANAN: CORS (Batasi Pintu Masuk) ---
 // Ubah cors() biasa menjadi konfigurasi spesifik
 app.use(cors({
-  origin: 'http://localhost:3000', // Hanya izinkan Frontend Next.js Anda
+  origin: ['http://localhost:3000', 'https://prof-gadget-v2.vercel.app'], // Hanya izinkan Frontend Next.js Anda
   methods: ['GET', 'POST', 'PATCH', 'DELETE'],
   credentials: true // Izinkan kirim cookie/token
 }));
